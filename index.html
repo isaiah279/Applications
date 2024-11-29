@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ImodeTech</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Projects</li>
+            <li>Contact</li>
+            <li>Consultation</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Team Imode</h1>
+            <h2>The Company Will Change Your Life</h2>
+            <a href="#" class="btn">Download it here</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Feature Image">
+                <p>An Awesome Feature</p>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Feature Image">
+                <p>An Awesome Feature</p>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Feature Image">
+                <p>An Awesome Feature</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <blockquote class="container">
+            <p>"Some Great Quote"</p>
+            <cite>Satisfactory Customer</cite>
+        </blockquote>
+    </section>
+
+    <section>
+        <div class="class-container">
+            <h2 class="skill-header">Skills</h2>
+            <div class="box box1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="box box2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="box box3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="pl">News of the Hour</h1>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+    /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.45rem;
+}
+
+header {
+    color: #FFFFFF;
+    background-color: #284652;
+    padding: 80px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0 0 16px 0;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    font-size: 1.25rem;
+    background: #468489;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3b7a7c;
+}
+
+/* Navigation */
+nav {
+    background-color:darkred;
+    padding: 10px 15px;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+nav ul.nav-links li {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav ul.nav-links.show {
+    display: block;
+}
+
+nav .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* Features Section */
+.features {
+    background: #FFFFFF;
+    color: #000000;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.features img {
+    width: 40%;
+    max-width: 150px;
+}
+
+.quote {
+    background: #549DA0;
+    color: white;
+    padding: 40px 0;
+}
+
+/* Skills Section */
+.class-container {
+    background-color: aqua;
+    margin: auto;
+    max-width: 100%;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: #284652;
+    color: white;
+    padding: 10px;
+    line-height: 1.3;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: red;
+}
+
+.box-content {
+    color: orange;
+}
+
+/* Footer */
+footer {
+    background-color: #353535;
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #c3c33c;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .features img {
+        width: 60%;
+    }
+
+    .box {
+        padding: 20px;
+    }
+}
+
+</style>
